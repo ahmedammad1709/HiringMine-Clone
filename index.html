@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <div id="logo"><img src="logo.png" alt="logo"></div>
+            </li>
+            <li class="navLinks">About Us </li>
+            <li class="navLinks">People</li>
+            <li class="navLinks">Resume Checker</li>
+            <li class="navLinks">Jobs</li>
+            <li class="navLinks">Login</li>
+            <li class="navLinks">Join Now</li>
+            <li id="anokha" class="navLinks">Employee / Post Job</li>
+            <li>
+                <div class="toggle-buttons">
+                    <img src="lightThemeLogo.png" id="dayBtn" onclick="switchToNight()" alt="Day Mode" />
+                    <img src="darkTheme.png" id="nightBtn" onclick="switchToDay()" alt="Night Mode"
+                        style="display: none;" />
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main" id="mainDiv">
+
+        <p class="gradient-text" id="headingMain">Dig. Apply</p>
+        <p class="gradient-text">Prepare Your Future</p>
+        <p id="mainText">Hiring Mine connects employer and job seekers, where employers are the source of the <br>
+            resources and the job seeker can find and apply for their targeted job.</p>
+
+
+        <div class="inputWrapper">
+            <input type="text" placeholder="Search by Role or Keyword" id="homeinput">
+            <img src="inputIcon.png" alt="" class="input-icon">
+        </div>
+
+        <button id="findJobsBtn">Find Jobs</button>
+
+        <h6>Popular Searches</h6>
+
+        <div>
+            <button>Software</button>
+            <button>Developer</button>
+            <button>backend</button>
+            <button>React</button>
+            <button>Node</button>
+            <button>React Native</button>
+            <button>Flutter</button>
+            <button>UI/UX</button>
+            <button>Designer</button>
+            <button>Web</button>
+            <button>SEO</button>
+            <button>Marketing</button>
+            <button>Writer</button>
+        </div>
+    </div>
+
+
+
+    <div class="page2" id="pageTwo">
+
+    </div>
+
+
+    <div class="dreamjobDiv">
+        <h1 id="dreamjobDiv_h1">
+            <span class="highlight" id="dreamjobDiv_span">Find Your Dream Job</span>
+            &nbsp;Super Fast Ever.
+        </h1>
+
+        <p>We are here to help jobseekers connect with organizer and companies. We are provides the best opportunities
+            to professional people.
+        </p>
+
+        <img src="bannerCareer.png" alt="">
+
+    </div>
+
+
+
+    <div class="cardsDiv">
+        <h1 id="cardsDivh1">
+            <span class="highlight">Countless Career Options</span>
+            &nbsp;Are Waiting For You To Explore
+        </h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Marketing & Sales</p>
+                <p>768 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Development</p>
+                <p>518 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Art & Illustration</p>
+                <p>227 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Animation</p>
+                <p>112 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Information Tech</p>
+                <p>108 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">Management</p>
+                <p>107 Jobs</p>
+            </div>
+
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">HR & Finance</p>
+                <p>92 Jobs</p>
+            </div>
+            <div class="card">
+                <img src="cardLogo.png" alt="">
+                <p class="cardHeading">UI/Ux Design</p>
+                <p>70 Jobs</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footerHead">
+            <div class="leftText">
+                <img src="logoForFotter.png" alt="">
+                <p>
+                    Built with ❤️ by Ammad Ahmed (HiringMine-Clone). <br>
+
+                    HiringMine bridges top talent and visionary companies through a smart, streamlined platform.
+                    Empowering candidates to shine, and employers to hire better — faster. Your next opportunity,
+                    powered by technology and trust.
+                </p>
+
+                <div class="iconsDiv">
+                    <h2>Follow us</h2>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightText">
+                <h2>Contact Us</h2>
+                <p>ahmedammad2006@gmail.com</p>
+                <p>Life at HiringMine</p>
+                <p>About HiringMine</p>
+                <img src="MyLogo.png" alt="">
+            </div>
+        </div>
+
+        <hr>
+        <div class="footerBottom">
+            <p>Privacy Policy | Terms and Conditions</p>
+            <p>Copyright Hiringmine 2025. All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const cards = document.getElementsByClassName("card");
+
+        function switchToNight() {
+            document.body.classList.add("night-mode");
+            document.getElementById("mainDiv").classList.add("night-mode");
+            document.getElementById("navbar").classList.add("night-mode");
+            document.getElementById("pageTwo").classList.add("night-mode");
+            document.getElementById("dayBtn").style.display = "none";
+            document.getElementById("nightBtn").style.display = "inline";
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add("night-mode");
+            }
+        }
+
+        function switchToDay() {
+            document.body.classList.remove("night-mode");
+            document.getElementById("mainDiv").classList.remove("night-mode");
+            document.getElementById("navbar").classList.remove("night-mode");
+            document.getElementById("pageTwo").classList.remove("night-mode");
+            document.getElementById("dayBtn").style.display = "inline";
+            document.getElementById("nightBtn").style.display = "none";
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.remove("night-mode");
+            }            
+
+        }
+
+        function updatePlaceholder() {
+            const input = document.getElementById("homeinput");
+
+            if (window.innerWidth <= 600) {
+                input.placeholder = "Search here ..";
+            }
+            else {
+                input.placeholder = "Search by Role or Keyword";
+            }
+        }
+
+        window.addEventListener("load", updatePlaceholder());
+        window.addEventListener("resize", updatePlaceholder());
+    </script>
+
+</body>
+
+</html>

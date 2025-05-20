@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+body.night-mode{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    background-color: white;
+}
+
+nav.night-mode{
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+
+}
+
+#logo img{
+    width: 186.35px;
+    height: 36px;
+}
+
+nav ul li{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@media (max-width: 970px) {
+    .navLinks{
+        display: none;
+    }
+    nav ul{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+#anokha{
+    color: #522fd4;
+}
+#anokha:hover{
+    color: #6b4ae3;
+}
+
+.toggle-buttons img{
+    width: 60px;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ffffff, #f5f3ff, #ebeafd);
+}
+.main.night-mode{
+    background: black;
+    color: white;
+}
+
+#headingMain{
+    margin-top: 60px;
+}
+
+.gradient-text {
+    background: linear-gradient(106.43deg, #522fd4, #61d6f9 95.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: -.02em; 
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.main #mainText{
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 33px;
+    padding: 0 10px;
+}
+
+
+
+.inputWrapper {
+  position: relative;
+  width: 40%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 83%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.inputWrapper input {
+  width: 100%;
+    padding: 10px 3px 11px 9px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .input-icon{
+        left: 75%;
+    }
+    .inputWrapper input{
+        font-size: 13px;
+    }
+
+    .main .gradient-text{
+        font-size: 65px;
+    }
+    .main #mainText{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 460px) {
+    .input-icon{
+        left: 70%;
+    }
+}
+
+.main #findJobsBtn{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    font-weight: 700;
+    align-items: center;
+    width: 140px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgb(104, 81, 255);
+    color: white;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 38px;
+    border : none;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    #findJobsBtn{
+        font-size: 16px;
+        width: 120px;
+    }
+}
+
+.main h6{
+    font-weight: 800;
+    font-size: 30px;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    margin-top: 35px;
+}
+
+.main div{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 0 50px;
+}
+
+.main div button{
+    padding: 7px 10px;
+    min-width: 64px;
+    color: rgb(104, 81, 255);
+    font-weight: 800;
+    cursor: pointer;
+    gap: 10px;
+    border: 1px solid rgba(104, 81, 255, 0.5);
+    border-radius: 6px;
+    white-space: nowrap;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.main div button:hover{
+    background-color: #e5e2f8;
+}
+
+
+.page2{
+    height: 45vh;
+    background-image: url(page2Img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ebeafd;
+}
+
+.page2.night-mode{
+    background-color: black;
+}
+
+@media (max-width: 800px) {
+    .page2{
+        height: 30vh;
+    }
+}
+
+.cardsDiv{
+    /* height: 100vh; */
+}
+#cardsDivh1{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 span.highlight {
+  /* white-space: nowrap;  */
+  color: #4d3bdb;
+}
+
+.cardsDiv .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40vh;
+    min-height: 40vh;
+    border-radius: 20px;
+    background: linear-gradient(to top, #ffffff, #f5f3ff, #f5f3ff, #ebeafd);
+    transition: all .6s ease;
+    box-shadow: rgba(158, 149, 213, 0.24) 0px 3.83636px 34.7634px 0px;
+}
+.card:hover{
+    box-shadow: #ebeafd 0 3px 8px;  
+}
+.card.night-mode{
+    background: #1E1E25;
+    border: 1px solid white;
+}
+
+@media (max-width: 760px) {
+    .card{
+        min-width: 40vh;
+        min-height: 28vh;
+    }
+}
+
+.card img{
+    width: 15%;
+}
+.card p{
+    padding: 8px;
+    font-size: 20px;
+}
+
+.card .cardHeading{
+    padding-top: 15px;
+    font-size: 24x;
+    font-weight: bold;
+    color: #4d3bdb;
+}
+
+.dreamjobDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#dreamjobDiv_h1{
+    color: blue;
+    padding-top: 60px;
+}
+#dreamjobDiv_span{
+    color: black;
+}
+
+.dreamjobDiv p{
+    font-size: 20px;
+    padding: 20px 20px;
+    max-width: 70vw;
+}
+
+.dreamjobDiv img{
+    padding: 20px 0 60px 0;
+    width: 90%;
+}
+
+/* --------------------------------Footer --------------------------------- */
+
+footer{
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    color: white;
+}
+
+footer .footerHead{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+footer .footerBottom{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footerHead .rightText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerHead .leftText p{
+    width: 40vw;
+    line-height: 22px;
+}
+
+.social-icons i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+.iconsDiv h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.rightText img{
+    width: 30%;
+}
+
+.rightText p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .footerHead{
+        flex-direction: column;
+    }
+
+    .footerHead .leftText p{
+        width: 100%;
+    }
+
+    .footerHead .rightText{
+        padding-top: 30px;
+    }
+}
